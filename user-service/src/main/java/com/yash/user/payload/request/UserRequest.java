@@ -1,4 +1,4 @@
-package main.java.com.yash.user.payload.request;
+package com.yash.user.payload.request;
 
 public class UserRequest {
 }

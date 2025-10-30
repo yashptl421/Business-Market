@@ -1,4 +1,4 @@
-package main.java.com.yash.user.payload.response;
+package com.yash.user.payload.response;
 
 public class UserResponse {
 }

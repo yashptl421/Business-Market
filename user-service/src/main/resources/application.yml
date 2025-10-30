@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  #Configuration config Server
+  config:
+    import: optional:configserver:http://localhost:8888

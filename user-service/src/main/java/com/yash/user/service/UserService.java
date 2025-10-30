@@ -1,4 +1,4 @@
-package main.java.com.yash.user.service;
+package com.yash.user.service;
 
 public class UserService {
 }

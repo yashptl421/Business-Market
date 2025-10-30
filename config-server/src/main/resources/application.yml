@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git.uri: ssh://localhost/config-repo
+        git.clone-on-start: true
+
+  security:
+    user:
+      name: root
+      password: ypatel
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
