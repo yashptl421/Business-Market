@@ -3,13 +3,17 @@ server:
 spring:
   application:
     name: config-server
-
+  profiles:
+    active: dev
   cloud:
     config:
       server:
-        git.uri: ssh://localhost/config-repo
-        git.clone-on-start: true
-
+        git.uri: file:///Users/yashpatel/Professional/Java/Workspace/Business Market/Business-Market-Config
+        git.searchPaths: global, api-gateway, user-service
+        git.skipSslValidation: true
+        default-label: main
+        # search-paths: config
+      profile: dev
   security:
     user:
       name: root
