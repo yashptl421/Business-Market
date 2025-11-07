@@ -80,7 +80,7 @@ public class WebSecurityConfig {
                                 .requestMatchers("/api/manager/delete/**").authenticated()
                                 .requestMatchers("/api/auth/logout").authenticated()
                                 .requestMatchers("/api/manager/user/**").permitAll()
-                                .requestMatchers("/v2/api-docs", "/swagger-ui/**", "/swagger-resources/**", "/webjars/**").permitAll()
+                                .requestMatchers("/v2/api-docs", "/swagger-ui/**","/user-service/**","/user-service/swagger-ui/** ", "/swagger-resources/**", "/webjars/**").permitAll()
                                 .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(jwtEntryPoint))
